@@ -17,6 +17,7 @@ Quais sugestões você faria para melhorar a performance de execução da consul
 
 ***Consulta indicada como mais custosa:
 
+``` sql
 SELECT to_char(x.created_date::timestamp,'YYYY-MM-DD'), 
        COUNT(distinct(x.orders_id)) as num_orders, 
        SUM(x.orders_value) as total
@@ -45,6 +46,7 @@ FROM (
          WHERE addresses.active = true AND LOWER(pos.name) NOT LIKE '%shipay%') AS x
  WHERE x.created_date BETWEEN '2021-01-01 00:00:00' AND '2021-11-30 23:59:59'
  GROUP BY x.created_date, x.orders_id, x.orders_value;
+ ```
  
  
  
