@@ -9,6 +9,7 @@
 
 
 2.- Utilizando a mesma estrutura de banco de dados fornecida para a questão anterior responda.
+
 O time de S.R.E Shipay identificou alguns alertas indicando “slow queries” no banco de dados réplica (SGBD/RDBMS) através das plataformas de monitoramento utilizadas pela empresa. 
 Uma análise mais apurada sobre os alertas indicaram que as consultas são utilizadas para a geração de relatórios na plataforma de relatórios).
 Foi disponibilizada a query indicada como mais custosa (listada logo após o enunciado da corrente questão), bem como a listagens dos índices criados no banco de dados (conforme a figura - [Query_Check_Indexes.png]).
