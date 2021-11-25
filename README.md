@@ -55,7 +55,7 @@ FROM (
  
  Detalhe como você confeccionaria o workflow de ETL em uma platforma de mercado (Pentaho, NiFi, Airflow). Nesse detalhamento você poderá nos disponibilizar o workflow em sí (Kettle no caso do Pentaho DI, Processors no NiFi, DAG no Airflow), caso você possua acesso fácil a alguma dessas plataformas/ferramentas, bem como a descrição dos componentes que você utilizaria para desenvolver cada um dos passos em alguma dessas plataformas, o que seria necessário realizar para executar o Workflow, etc.
  
-*Caso o acesso a plataforma não seja possível, nos encaminhe o detalhamento dos passos, sem problemas.
+*Caso o acesso a plataforma não seja possível, nos encaminhe apenas o detalhamento dos passos por escrito, sem problemas.
 
 
 
