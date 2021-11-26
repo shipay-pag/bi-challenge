@@ -4,8 +4,9 @@
 
 
 
-1.- Tomando como base a representação da estrutura do banco de dados fornecida (conforme diagrama [ER_Transact_Diagram.png], o script DDL [1_create_database_ddl.sql], e o script exemplos de registros [2_seed_data.sql] disponibilizados no repositório do github): Construa uma consulta SQL que será utilizada em um relatório que retornará o valor do ticket médio de transações por cliente, e por região do país (norte [AC, AM, AP, PA, RO, RR, TO], nordeste [AL, BA, CE, MA, PB, PE, PI, RN, SE], centro-oeste [GO, MT, MS], sul [PR, RS, SC], sudeste [ES, MG, RJ, SP]) conforme o endereço do Ponto de Venda(POS) do cliente, ordenados de forma decrescente pelo valor do ticket médio.
+1.- Tomando como base a representação da estrutura do banco de dados fornecida abaixo, o script DDL [1_create_database_ddl.sql], e o script exemplos de registros [2_seed_data.sql] disponibilizados no repositório do github): Construa uma consulta SQL que será utilizada em um relatório que retornará o valor do ticket médio de transações por cliente, e por região do país (norte [AC, AM, AP, PA, RO, RR, TO], nordeste [AL, BA, CE, MA, PB, PE, PI, RN, SE], centro-oeste [GO, MT, MS], sul [PR, RS, SC], sudeste [ES, MG, RJ, SP]) conforme o endereço do Ponto de Venda(POS) do cliente, ordenados de forma decrescente pelo valor do ticket médio.
 
+![ER_Transact_Diagram](https://github.com/shipay-pag/bi-challenge/blob/master/ER_Transact_Diagram.png "ER_Transact_Diagram")
 
 
 2.- Utilizando a mesma estrutura de banco de dados fornecida para a questão anterior responda.
