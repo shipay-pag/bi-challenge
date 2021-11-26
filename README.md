@@ -14,6 +14,7 @@
 O time de S.R.E Shipay identificou alguns alertas indicando “slow queries” no banco de dados réplica (SGBD/RDBMS) através das plataformas de monitoramento utilizadas pela empresa. 
 Uma análise mais apurada sobre os alertas indicaram que as consultas são utilizadas para a geração de relatórios na plataforma de relatórios).
 Foi disponibilizada a query indicada como mais custosa (listada logo após o enunciado da corrente questão), bem como a listagens dos índices criados no banco de dados (conforme a figura).
+
 ![Query_Check_Indexes](https://github.com/shipay-pag/bi-challenge/blob/master/Query_Check_Indexes.png?raw=true "Query_Check_Indexes")
 
 Quais sugestões você faria para melhorar a performance de execução da consulta referenciada? Não limite suas sugestões, temos a liberdade para propor alterações de configurações no banco de dados, alterar a consulta, adição de sub sistemas, etc. 
@@ -56,7 +57,8 @@ FROM (
  3.- Utilizando a mesma estrutura de banco de dados fornecida para as questões anteriores responda.
  
  O time propôs a utilização de uma ferramenta de ETL (Extract Transform Load) para realizar validações de cadastros de clientes (por exemplo, se um CNPJ está ativo e válido na receita federal). 
- Durante o rito de planejamento da próxima sprint, foi proposto a criação de um "workflow" no ETL que irá conter três passos, o primeiro passo irá consultar a tabela de "customers" para obter a lista de CNPJs a serem validados, o segundo passo irá consumir um serviço/API REST que irá validar o cadastro da pessoa jurídica atendendo ao seguinte exemplo de contrato: "$ curl -X GET https://www.receitaws.com.br/v1/cnpj/27865757000102" e por fim, o terceiro passo irá fundir/concatenar as informações da tabela customers com a resposta da API "ReceitaWS" e irá armazenar esse novo conjunto de informações em uma collection em um NoSQL baseado em documentos (JSON). Caso deseje, você poderá visualizar a proposta da implementação do workflow de ETL no diagrama [ETL_Diagram.png].
+ Durante o rito de planejamento da próxima sprint, foi proposto a criação de um "workflow" no ETL que irá conter três passos, o primeiro passo irá consultar a tabela de "customers" para obter a lista de CNPJs a serem validados, o segundo passo irá consumir um serviço/API REST que irá validar o cadastro da pessoa jurídica atendendo ao seguinte exemplo de contrato: "$ curl -X GET https://www.receitaws.com.br/v1/cnpj/27865757000102" e por fim, o terceiro passo irá fundir/concatenar as informações da tabela customers com a resposta da API "ReceitaWS" e irá armazenar esse novo conjunto de informações em uma collection em um NoSQL baseado em documentos (JSON). Caso deseje, você poderá visualizar a proposta da implementação do workflow de ETL no diagrama.
+ 
  ![ETL_Diagram](https://github.com/shipay-pag/bi-challenge/blob/master/ETL_Diagram.png "ETL_Diagram")
  
  Detalhe como você confeccionaria o workflow de ETL em uma platforma de mercado (Pentaho, NiFi, Airflow). 
